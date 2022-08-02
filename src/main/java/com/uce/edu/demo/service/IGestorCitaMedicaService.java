@@ -10,10 +10,11 @@ public interface IGestorCitaMedicaService {
 
 	public void insertarCita(String numero, LocalDateTime fecha, BigDecimal valor, String lugar, String cedulaDoctor,
 			String cedulaPaciente);
-	
+
 	public int actualizarCitaQuery(String numero, String diagnostico, String receta, LocalDateTime fechaProximaCita);
 
-	
+	public void actualizarCita(String numeroCita, String diagnostico, String receta, LocalDateTime fechaProximaCita);
+
 	public List<PacienteLigero> reportePacientes(LocalDateTime fecha, String genero);
 
 }

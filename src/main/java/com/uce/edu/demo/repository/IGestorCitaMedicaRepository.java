@@ -10,4 +10,8 @@ public interface IGestorCitaMedicaRepository {
 
 	public int actualizarCitaQuery(String numero, String diagnostico, String receta, LocalDateTime fechaProximaCita);
 	
+	public void actualizarCita(CitaMedica citaMedica);
+	
+	public CitaMedica buscarPorNumero(String numeroCita);
+	
 }
